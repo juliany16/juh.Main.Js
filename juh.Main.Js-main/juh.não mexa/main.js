@@ -11,3 +11,22 @@ for(let i=0;i<botoes.length;i++){
         textos[i].classList.add("ativo");
     }
 }
+
+
+
+const contadores = document.querySelectorAll(".contador");
+const tempoObjetivo1 = new Date ("2023-10-05T00:00:00");
+
+contadores[0].textContent = calculatempo(tempoObjetivo1);
+
+function calculatempo(tempoObjetivo1){
+    let tempoAtual = newDate();
+    let tempoFinal = tempoObjetivo1 - tempoAtual
+    let  segundos = math.floor (tempoFinal/1000);
+    let  minutos = math.floor (segundos/60);
+    let horas = math.floor (minutos/60);
+    let dias = math.floor (horas/24);
+}
+ segundos% = 60
+ minutos% = 60 
+ horas% = 24
